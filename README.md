@@ -12,7 +12,7 @@ Database setup:
 
 	Create a new user pharmaonline with password pharmaonline.
 	Create a new database "pharma_online".
-	Import the pharmaonline.sql(sql folder) into the database.
+	Import the pharmaonline.sqlinto the database.
 	
 	*If you created a different user or database name, check
 	the database configuration in pharmaonline.com/app/Config/database.php
