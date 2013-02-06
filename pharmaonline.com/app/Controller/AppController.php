@@ -39,10 +39,12 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-    var $helpers = array('Html', 'Form', 'Session');
+
+public $helpers = array('Html', 'Js', 'Form', 'Session');
 
 public $components = array(
     'Session',
+    'RequestHandler',
     'DebugKit.Toolbar',
     'Auth' => array(
         'loginAction' => array(
@@ -57,21 +59,58 @@ public $components = array(
             'controller' => 'pages',
             'action' => 'display',
         ),
-      //   'authorize' => array('Controller'),
+         'authorize' => array('Controller'),
     )
 );
 
- public function beforeFilter(){
-
-        $this->Auth->userModel = 'User';
-        $this->Auth->fields = array(
-            'username' => 'email',
-            'password' => 'password',
-            );
-
+public function isAuthorized($user) {
+    // Admin can access every action
+    if (isset($user['User_Role']) && $user['User_Role'] === 'admin') {
+        return true;
     }
 
+    // Default deny
+    return false;
+}
 
+ public function beforeFilter(){
+        //request parameters
+    if (isset($this->request->params['page'])) {
+             $this->request->params['named']['page'] = $this->request->params['page'];
+        }
+
+     $this->Auth->userModel = 'User';
+     $this->Auth->fields = array(
+         'username' => 'email',
+         'password' => 'password',
+     );
+
+
+}
+
+//change layout for user and admin
+    public function beforeRender() {
+        $this->_configureErrorLayout();
+        
+    }
+ 
+    public function _configureErrorLayout() {
+       
+            if ($this->_isAdminMode()) {
+                $this->layout = 'admin_default';
+            } else {
+                $this->layout = 'default';
+            }
+        
+    }
+ 
+    public function _isAdminMode() {
+        $adminRoute = Configure::read('Routing.prefixes');
+        if (isset($this->params['prefix']) && in_array($this->params['prefix'], $adminRoute)) {
+            return true;
+        }
+        return false;
+    }
 
 
 }

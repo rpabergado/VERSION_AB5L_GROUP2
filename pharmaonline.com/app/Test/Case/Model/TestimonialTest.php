@@ -13,19 +13,7 @@ class TestimonialTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.testimonial',
-		'app.customer_cart',
-		'app.transaction',
-		'app.summary_sales',
-		'app.used_in',
-		'app.cart_item',
-		'app.drug',
-		'app.administrator',
-		'app.coupon',
-		'app.avails',
-		'app.avail',
-		'app.summary_sales',
-		'app.category'
+		'app.testimonial'
 	);
 
 /**

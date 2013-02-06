@@ -97,7 +97,7 @@
 								<li class="divider-vertical"></li>
 
 								<li>
-									<a href="admin_userlist"><i class="icon-user icon-large"></i> Users </a>
+									<a href="userlist"><i class="icon-user icon-large"></i> Users </a>
 								</li>
 
 								<li class="divider-vertical"></li>
@@ -134,6 +134,14 @@
 
 		<!-- content here -->
 		<?php echo $this->fetch('body_content'); ?>
+		<!-- space -->
+		<div class="row">
+			<div class="span12">
+				<div class="container" style="height:100px"></div>
+
+			</div>
+		</div>
+
 		<!-- footer -->
 
 		<div class="row">

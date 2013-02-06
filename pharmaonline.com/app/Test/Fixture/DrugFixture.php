@@ -28,7 +28,7 @@ class DrugFixture extends CakeTestFixture {
 		'Drug_DForm' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 20, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'Drug_Description' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 1000, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'Drug_SideEffects' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 1000, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-		'Admin_ID' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
+		'User_ID' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
 		'Category_ID' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 3),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'Item_ID', 'unique' => 1)
@@ -53,7 +53,7 @@ class DrugFixture extends CakeTestFixture {
 			'Drug_DForm' => 'Lorem ipsum dolor ',
 			'Drug_Description' => 'Lorem ipsum dolor sit amet',
 			'Drug_SideEffects' => 'Lorem ipsum dolor sit amet',
-			'Admin_ID' => 1,
+			'User_ID' => 1,
 			'Category_ID' => 1
 		),
 	);

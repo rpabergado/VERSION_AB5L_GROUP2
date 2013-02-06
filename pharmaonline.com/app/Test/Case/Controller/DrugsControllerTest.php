@@ -13,20 +13,7 @@ class DrugsControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.drug',
-		'app.administrator',
-		'app.testimonial',
-		'app.customer',
-		'app.transaction',
-		'app.summary_sales',
-		'app.used_in',
-		'app.cart_item',
-		'app.customer_cart',
-		'app.coupon',
-		'app.avails',
-		'app.avail',
-		'app.summary_sales',
-		'app.category'
+		'app.drug'
 	);
 
 /**
@@ -67,6 +54,46 @@ class DrugsControllerTest extends ControllerTestCase {
  * @return void
  */
 	public function testDelete() {
+	}
+
+/**
+ * testAdminIndex method
+ *
+ * @return void
+ */
+	public function testAdminIndex() {
+	}
+
+/**
+ * testAdminView method
+ *
+ * @return void
+ */
+	public function testAdminView() {
+	}
+
+/**
+ * testAdminAdd method
+ *
+ * @return void
+ */
+	public function testAdminAdd() {
+	}
+
+/**
+ * testAdminEdit method
+ *
+ * @return void
+ */
+	public function testAdminEdit() {
+	}
+
+/**
+ * testAdminDelete method
+ *
+ * @return void
+ */
+	public function testAdminDelete() {
 	}
 
 }

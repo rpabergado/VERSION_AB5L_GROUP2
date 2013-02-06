@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 04, 2013 at 06:28 PM
+-- Generation Time: Feb 06, 2013 at 08:38 AM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -171,7 +171,7 @@ CREATE TABLE IF NOT EXISTS `transaction` (
   `Transaction_PayType` varchar(20) NOT NULL,
   `Transaction_Total` float NOT NULL,
   `Transaction_Date` date NOT NULL,
-  `Customer_NameOnCard` int(15) NOT NULL,
+  `Customer_NameOnCard` varchar(15) NOT NULL,
   `Card_Number` varchar(16) NOT NULL,
   `Issuing_Bank` varchar(50) NOT NULL,
   `CVV2_Number` varchar(4) NOT NULL,

@@ -53,7 +53,7 @@
 		<!-- end of top nav user controls -->
 		<br /><br />
 		<!-- header -->
-
+				<!-- site logo/title -->
 			<div class="row">
 
 				<div class="span4">
@@ -96,13 +96,14 @@
 							<ul class="nav" id="navigation_links">
 								<li class="divider-vertical"></li>
 								<li>
-									<a href="home"><i class="icon-home icon-large"></i> Home </a>
+									<a id="home_link" href="home"><i class="icon-home icon-large"></i> Home </a>
 								</li>
 								<li class="divider-vertical"></li>
 								<li>
-									<a href="products"><i class="icon-medkit icon-large"></i> Products </a></li>
+									<a id="products_link" href="products"><i class="icon-medkit icon-large"></i> Products </a></li>
 								<li class="divider-vertical"></li>
-								<li><a href="#"><i class="icon-tags icon-large"></i> Coupons </a></li>
+
+								<li><a id="coupons_link" href="coupons"><i class="icon-tags icon-large"></i> Coupons </a></li>
 								<li class="divider-vertical"></li>
 							</ul>
 
@@ -127,8 +128,15 @@
 
 		<!-- content here -->
 		<?php echo $this->fetch('body_content'); ?>
-		<!-- footer -->
 
+		<!-- space -->
+		<div class="row">
+			<div class="span12">
+				<div class="container" style="height:100px"></div>
+
+			</div>
+		</div>
+		<!-- footer -->
 		<div class="row">
 			<div class="span12 ">
 				<ul class="breadcrumb pagination-centered" id="footer">

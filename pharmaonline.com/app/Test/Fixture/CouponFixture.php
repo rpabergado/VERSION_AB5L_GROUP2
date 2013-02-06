@@ -25,7 +25,7 @@ class CouponFixture extends CakeTestFixture {
 		'Item_Quantity' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
 		'Item_Availability' => array('type' => 'boolean', 'null' => false, 'default' => null),
 		'Coupon_Discount' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 3),
-		'Admin_ID' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 4),
+		'User_ID' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'Item_ID', 'unique' => 1)
 		),
@@ -46,7 +46,7 @@ class CouponFixture extends CakeTestFixture {
 			'Item_Quantity' => 1,
 			'Item_Availability' => 1,
 			'Coupon_Discount' => 1,
-			'Admin_ID' => 1
+			'User_ID' => 1
 		),
 	);
 

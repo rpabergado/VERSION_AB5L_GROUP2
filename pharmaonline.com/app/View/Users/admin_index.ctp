@@ -25,7 +25,7 @@
         <strong id="caret_white"class="caret"></strong></a>
        <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="accountDD" id="ul_accountDD">
 
-       	<li><a tabindex="-1" href="admin_dashboard"><i class="icon-wrench"></i> Dashboard</a></li>
+       	<li><a tabindex="-1" href="admin"><i class="icon-wrench"></i> Dashboard</a></li>
         <li class="divider"></li>
         <li><a tabindex="-1" href="logout"><i class="icon-off"></i> Log Out</a></li>
         

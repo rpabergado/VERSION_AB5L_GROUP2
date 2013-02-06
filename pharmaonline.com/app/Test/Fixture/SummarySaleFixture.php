@@ -15,7 +15,7 @@ class SummarySaleFixture extends CakeTestFixture {
 		'Summary_Sales_Month' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 15, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'Summary_Sales_Year' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 4, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'Summary_Sales_Total' => array('type' => 'float', 'null' => false, 'default' => null),
-		'Admin_ID' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 4),
+		'User_ID' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'Summary_Sales_ID', 'unique' => 1)
 		),
@@ -33,7 +33,7 @@ class SummarySaleFixture extends CakeTestFixture {
 			'Summary_Sales_Month' => 'Lorem ipsum d',
 			'Summary_Sales_Year' => 'Lo',
 			'Summary_Sales_Total' => 1,
-			'Admin_ID' => 1
+			'User_ID' => 1
 		),
 	);
 

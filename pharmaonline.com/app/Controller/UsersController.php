@@ -13,9 +13,7 @@ App::uses('AppController', 'Controller');
  */
 class UsersController extends AppController {
 
-//messages 
-
-
+var $name = 'Users';
 
 public function beforeFilter() {
 	parent::beforeFilter();
@@ -30,11 +28,46 @@ public function beforeFilter() {
             		<button type="button" class="close" data-dismiss="alert">&times;</button>
  					<strong>Email address or password is invalid. Please try again.</strong>
  				</div>';
-
- 	if (isset($this->request->params['page'])) { 
-        $this->request->params['named']['page'] = $this->request->params['page']; 
-	} 			
+ 			
  }
+//authorization, limit users from accessing prohibited pages
+ public function isAuthorized($user) {
+ 	if(in_array($this->action, array('signup','signup_success','login','logout'))){
+
+ 		return true;
+ 	}
+
+    if (in_array($this->action, array('index', 'viewcart'))) {
+        if($user['User_Role'] == 'admin'){
+			$this->Session->setFlash('<div class="alert alert-error fade in">
+            				<button type="button" class="close" data-dismiss="alert">&times;</button>
+ 							<strong><i class="icon-ban-circle"></i> Access Prohibited.</strong>
+ 							</div>');
+    		$this->redirect('/admin');
+    		return false;
+        }
+        else{
+
+        	return true;
+        }
+    }
+
+    if (in_array($this->action, array('admin_userlist', 'admin_index'))) {
+        if ($user['User_Role'] == 'admin') {
+            return true;
+        }
+        else{
+		$this->Session->setFlash('<div class="alert alert-error fade in">
+            				<button type="button" class="close" data-dismiss="alert">&times;</button>
+ 							<strong><i class="icon-ban-circle"></i> Access Prohibited.</strong>
+ 							</div>');
+    	$this->redirect('/user');
+
+        }
+    }
+
+    return parent::isAuthorized($user);
+}
 
 /*access methods */
 public function login(){
@@ -58,7 +91,7 @@ public function login(){
  							<strong>Logged in as Administrator.</strong> <br />
  							<strong>Welcome '.$user['User']['User_FName'].'!</strong>
  							</div>');
-                	return $this->redirect('/admin_dashboard');
+                	return $this->redirect(array('controller' => 'users', 'action' => 'index', 'admin' => true));
                 }
                 else{
                 	$this->Session->setFlash('<div class="alert alert-sucess fade in">
@@ -232,18 +265,20 @@ public function logout() {
 	}
 
 	/* admin_userlist method */
-	public $paginate = array(
+
+
+	public function admin_userlist($page=1){
+	//	$this->layout = 'admin_default';
+		$this->set('title_for_layout','User Lists');
+		$this->User->recursive = -1;
+		$this->paginate = array(
 		'conditions' => array('User.User_Role' => 'user'),
-        'limit' => 3,
+        'limit' => 2,
+        'page' => $page,
         'order' => array(
             'User.User_ID' => 'asc'
         )
      );
-	public function admin_userlist(){
-
-		$this->layout = 'admin_default';
-		$this->set('title_for_layout','User Lists');
-		$this->User->recursive = -1;    
 		$this->set('users', $this->paginate());
 	}
 /**

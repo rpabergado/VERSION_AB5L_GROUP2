@@ -25,7 +25,7 @@
         <strong id="caret_white"class="caret"></strong></a>
        <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="accountDD" id="ul_accountDD">
 
-       	<li><a tabindex="-1" href="admin_dashboard"><i class="icon-wrench"></i> Dashboard</a></li>
+       	<li><a tabindex="-1" href="admin"><i class="icon-wrench"></i> Dashboard</a></li>
         <li class="divider"></li>
         <li><a tabindex="-1" href="logout"><i class="icon-off"></i> Log Out</a></li>
         
@@ -42,14 +42,21 @@
 
 <?php $this->start('body_content'); ?>
 
+<?php $this->Paginator->options(array(
+
+			'url' => array('action' => 'userlist','prefix' => 'admin','admin' => true)
+		));
+?>
+	  		
+
 <div class="container">
 	<div class="row">
-		<div class="span12">
+		<div id="content" class="span12">
 
 <?php echo $this->Session->flash(); ?>
 
 	<h2><?php echo __('Users'); ?></h2>
-	<table class="table table-hover">
+	<table  class="table table-hover">
 	<tr>
 			<th><?php echo $this->Paginator->sort('ID'); ?></th>
 			<th><?php echo $this->Paginator->sort('First Name'); ?></th>
@@ -83,18 +90,19 @@
 
 	<div class="pagination pagination-right">
 		<ul>
-			<li>		
-			<?php echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled')); ?>
+			<li>
+			<?php echo $this->Paginator->prev('< ' . __('previous'), array('url' => $this->passedArgs), null, array('class' => 'prev disabled')); ?>
 			</li>
 			<li>
 			<?php	echo $this->Paginator->numbers(array('separator' => '')); ?>
 			</li>
 			<li>
-			<?php	echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+			<?php echo $this->Paginator->next(__('next') . ' >', array('url' => $this->passedArgs), null, array('class' => 'next disabled'));
 	?>
 			</li>
 		</ul>
 	</div>
+
 
 		</div>
 	</div>

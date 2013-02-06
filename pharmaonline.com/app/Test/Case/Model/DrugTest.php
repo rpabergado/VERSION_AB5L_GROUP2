@@ -13,13 +13,7 @@ class DrugTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.drug',
-		'app.administrator',
-		'app.testimonial',
-		'app.coupon',
-		'app.summary_sales',
-		'app.category',
-		'app.cart_item'
+		'app.drug'
 	);
 
 /**

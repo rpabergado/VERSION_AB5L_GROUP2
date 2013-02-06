@@ -29,7 +29,7 @@ class TransactionFixture extends CakeTestFixture {
 		'CVV2_Number' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 4, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'Card_Type' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'Transaction_Dpercentage' => array('type' => 'integer', 'null' => true, 'default' => null, 'length' => 3),
-		'Customer_ID' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
+		'User_ID' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
 		'Summary_Sales_ID' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'Transaction_ID', 'unique' => 1)
@@ -48,14 +48,14 @@ class TransactionFixture extends CakeTestFixture {
 			'Transaction_Saddress' => 'Lorem ipsum dolor sit amet',
 			'Transaction_PayType' => 'Lorem ipsum dolor ',
 			'Transaction_Total' => 1,
-			'Transaction_Date' => '2013-01-31',
+			'Transaction_Date' => '2013-02-05',
 			'Customer_NameOnCard' => 1,
 			'Card_Number' => 'Lorem ipsum do',
 			'Issuing_Bank' => 'Lorem ipsum dolor sit amet',
 			'CVV2_Number' => 'Lo',
 			'Card_Type' => 'Lorem ipsum dolor sit amet',
 			'Transaction_Dpercentage' => 1,
-			'Customer_ID' => 1,
+			'User_ID' => 1,
 			'Summary_Sales_ID' => 1
 		),
 	);

@@ -13,16 +13,7 @@ class CouponTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.coupon',
-		'app.administrator',
-		'app.testimonial',
-		'app.drug',
-		'app.category',
-		'app.cart_item',
-		'app.summary_sales',
-		'app.used_in',
-		'app.avails',
-		'app.avail'
+		'app.coupon'
 	);
 
 /**

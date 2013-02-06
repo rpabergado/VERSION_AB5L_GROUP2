@@ -13,20 +13,7 @@ class SummarySaleTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.summary_sale',
-		'app.administrator',
-		'app.testimonial',
-		'app.customer_cart',
-		'app.transaction',
-		'app.summary_sales',
-		'app.used_in',
-		'app.cart_item',
-		'app.drug',
-		'app.category',
-		'app.coupon',
-		'app.avails',
-		'app.avail',
-		'app.summary_sales'
+		'app.summary_sale'
 	);
 
 /**
