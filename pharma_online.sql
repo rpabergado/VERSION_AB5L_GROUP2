@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 06, 2013 at 08:38 AM
+-- Generation Time: Feb 06, 2013 at 11:38 AM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `category` (
   `Category_ID` int(3) NOT NULL AUTO_INCREMENT,
   `Category_Name` varchar(50) NOT NULL,
   PRIMARY KEY (`Category_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=100 ;
 
 --
 -- Dumping data for table `category`
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `coupon` (
   `Coupon_Discount` int(3) NOT NULL,
   `User_ID` int(10) NOT NULL,
   PRIMARY KEY (`Item_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6000000000 ;
 
 --
 -- Dumping data for table `coupon`
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `coupon` (
 --
 
 CREATE TABLE IF NOT EXISTS `drug` (
-  `Item_ID` int(10) NOT NULL AUTO_INCREMENT COMMENT 'should be unique primary key',
+  `Item_ID` bigint(10) NOT NULL AUTO_INCREMENT COMMENT 'should be unique primary key',
   `Drug_BrandName` varchar(20) NOT NULL,
   `Drug_GenericName` varchar(20) NOT NULL,
   `Item_Price` float NOT NULL,
@@ -96,12 +96,15 @@ CREATE TABLE IF NOT EXISTS `drug` (
   `User_ID` int(10) NOT NULL,
   `Category_ID` int(3) NOT NULL,
   PRIMARY KEY (`Item_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4000000002 ;
 
 --
 -- Dumping data for table `drug`
 --
 
+INSERT INTO `drug` (`Item_ID`, `Drug_BrandName`, `Drug_GenericName`, `Item_Price`, `Item_Quantity`, `Item_Availability`, `Drug_Distributor`, `Drug_DForm`, `Drug_Description`, `Drug_SideEffects`, `User_ID`, `Category_ID`) VALUES
+(4000000000, 'a', 'a', 3, 4, 1, 'aa', 'a', 'a', 'a', 1000000000, 5),
+(4000000001, 'q', 'q', 2, 2, 1, 'q', 'q', 'qq', 'q', 1000000000, 2);
 
 -- --------------------------------------------------------
 
@@ -132,7 +135,7 @@ CREATE TABLE IF NOT EXISTS `summary_sales` (
   `Summary_Sales_Total` float NOT NULL,
   `User_ID` int(10) NOT NULL,
   PRIMARY KEY (`Summary_Sales_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8000000000 ;
 
 --
 -- Dumping data for table `summary_sales`
@@ -152,7 +155,7 @@ CREATE TABLE IF NOT EXISTS `testimonial` (
   `Testimonial_Body` varchar(1000) NOT NULL,
   `User_ID` int(10) NOT NULL,
   PRIMARY KEY (`Testimonial_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9000000000 ;
 
 --
 -- Dumping data for table `testimonial`
@@ -180,7 +183,7 @@ CREATE TABLE IF NOT EXISTS `transaction` (
   `User_ID` int(10) NOT NULL,
   `Summary_Sales_ID` int(10) NOT NULL,
   PRIMARY KEY (`Transaction_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=100000000000000 ;
 
 --
 -- Dumping data for table `transaction`
