@@ -1,6 +1,19 @@
+<?php $this->start('body_content'); ?>
+
+	  		
+
+<div class="container">
+	<div class="row">
+		<div id="content" class="span12">
+
+
+
+<?php echo $this->Session->flash(); ?>
+
+
 <div class="drugs index">
 	<h2><?php echo __('Drugs'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table  class="table table-hover">
 	<tr>
 			<th><?php echo $this->Paginator->sort('Item_ID'); ?></th>
 			<th><?php echo $this->Paginator->sort('Drug_BrandName'); ?></th>
@@ -14,7 +27,7 @@
 			<th><?php echo $this->Paginator->sort('Drug_SideEffects'); ?></th>
 			<th><?php echo $this->Paginator->sort('User_ID'); ?></th>
 			<th><?php echo $this->Paginator->sort('Category_ID'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			
 	</tr>
 	<?php
 	foreach ($drugs as $drug): ?>
@@ -31,11 +44,7 @@
 		<td><?php echo h($drug['Drug']['Drug_SideEffects']); ?>&nbsp;</td>
 		<td><?php echo h($drug['Drug']['User_ID']); ?>&nbsp;</td>
 		<td><?php echo h($drug['Drug']['Category_ID']); ?>&nbsp;</td>
-		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $drug['Drug']['Item_ID'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $drug['Drug']['Item_ID'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $drug['Drug']['Item_ID']), null, __('Are you sure you want to delete # %s?', $drug['Drug']['Item_ID'])); ?>
-		</td>
+		
 	</tr>
 <?php endforeach; ?>
 	</table>
@@ -54,9 +63,25 @@
 	?>
 	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Drug'), array('action' => 'add')); ?></li>
-	</ul>
+
+<br/>
+<br/>
+<div class="row">
+
+<div class="span12">
+<p>
+ 
+  <a href="addproduct" class="btn" type="button">Add</a>
+
+
+  <a href="editproduct" class="btn" type="button">Edit</a>
+</p>
+
 </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<?php $this->end(); ?>

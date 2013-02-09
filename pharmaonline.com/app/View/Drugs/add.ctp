@@ -1,3 +1,5 @@
+<? $this->start('body_content'); ?>
+
 <div class="drugs form">
 <?php echo $this->Form->create('Drug'); ?>
 	<fieldset>
@@ -25,3 +27,6 @@
 		<li><?php echo $this->Html->link(__('List Drugs'), array('action' => 'index')); ?></li>
 	</ul>
 </div>
+
+
+<?php $this->end(); ?>

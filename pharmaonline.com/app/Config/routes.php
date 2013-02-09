@@ -48,6 +48,11 @@
 
 	Router::connect('/userlist/*', array('controller' => 'users','action' => 'userlist','admin' => true));
 
+	Router::connect('/manageproducts/*', array('controller' => 'drugs','action' => 'index','admin' => true));
+
+	Router::connect('/addproduct/*', array('controller' => 'drugs','action' => 'add','admin' => true));
+
+	Router::connect('/editproduct/*', array('controller' => 'drugs','action' => 'index','admin' => true));
 //user index
 	Router::connect('/user',array('controller' => 'users', 'action' => 'index'));
 

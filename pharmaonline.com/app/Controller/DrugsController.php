@@ -8,19 +8,7 @@ App::uses('AppController', 'Controller');
  */
 class DrugsController extends AppController {
 
-/**
- * Helpers
- *
- * @var array
- */
-	public $helpers = array('Javascript');
 
-/**
- * Components
- *
- * @var array
- */
-	public $components = array('Auth');
 
 /**
  * index method

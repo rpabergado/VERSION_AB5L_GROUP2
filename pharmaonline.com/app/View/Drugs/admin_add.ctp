@@ -1,3 +1,8 @@
+<? $this->start('body_content'); 
+
+	$userID = $this->Session->read('Auth.User.User_ID');	
+?>
+
 <div class="drugs form">
 <?php echo $this->Form->create('Drug'); ?>
 	<fieldset>
@@ -12,7 +17,7 @@
 		echo $this->Form->input('Drug_DForm');
 		echo $this->Form->input('Drug_Description');
 		echo $this->Form->input('Drug_SideEffects');
-		echo $this->Form->input('User_ID');
+		echo $this->Form->input('User_ID', array('type' => 'hidden', 'value' => $userID));
 		echo $this->Form->input('Category_ID');
 	?>
 	</fieldset>
@@ -25,3 +30,9 @@
 		<li><?php echo $this->Html->link(__('List Drugs'), array('action' => 'index')); ?></li>
 	</ul>
 </div>
+
+
+<?php $this->end(); ?>
+
+
+

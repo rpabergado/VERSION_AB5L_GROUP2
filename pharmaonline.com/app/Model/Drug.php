@@ -12,7 +12,8 @@ class Drug extends AppModel {
  * @var mixed False or table name
  */
 	public $useTable = 'drug';
-
+var $name = 'Drug';
+	public $useDbConfig = 'default';
 /**
  * Primary key field
  *
@@ -140,4 +141,5 @@ class Drug extends AppModel {
 			),
 		),
 	);
+
 }

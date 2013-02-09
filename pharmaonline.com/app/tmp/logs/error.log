@@ -49,12 +49,263 @@
 2013-02-06 08:34:22 Error: [MissingControllerException] Controller class BootstrapController could not be found.
 #0 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-02-06 15:10:44 Error: [MissingControllerException] Controller class BootstrapController could not be found.
+2013-02-06 10:10:15 Error: [MissingControllerException] Controller class BootstrapController could not be found.
 #0 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-02-06 15:38:13 Error: [MissingControllerException] Controller class BootstrapController could not be found.
+2013-02-06 10:11:15 Error: [MissingControllerException] Controller class BootstrapController could not be found.
 #0 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2013-02-06 16:11:41 Error: [MissingControllerException] Controller class BootstrapController could not be found.
+2013-02-06 10:32:04 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\View.php(864): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\View.php(469): View->loadHelpers()
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#4 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-06 10:32:08 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\View.php(864): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\View.php(469): View->loadHelpers()
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#4 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-06 10:32:11 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\View.php(864): HelperCollection->load('Javascript', Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\View.php(469): View->loadHelpers()
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#4 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-02-06 10:34:52 Error: [MissingControllerException] Controller class BootstrapController could not be found.
 #0 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-02-06 10:59:17 Error: [MissingControllerException] Controller class ViewtransactionsController could not be found.
+#0 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-06 11:06:42 Error: Fatal Error (1): Call to undefined function read() in [C:\xampp\htdocs\pharmaonline.com\app\Model\Drug.php, line 146]
+2013-02-06 11:06:42 Error: [FatalErrorException] Call to undefined function read()
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 146)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 146, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 146, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:08:06 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 17]
+2013-02-06 11:08:06 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:09:32 Error: Fatal Error (1): Call to undefined function read() in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 17]
+2013-02-06 11:09:32 Error: [FatalErrorException] Call to undefined function read()
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:12:00 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 17]
+2013-02-06 11:12:00 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:12:23 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 17]
+2013-02-06 11:12:23 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:12:40 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 17]
+2013-02-06 11:12:40 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:12:54 Error: Fatal Error (1): Call to undefined function read() in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 17]
+2013-02-06 11:12:54 Error: [FatalErrorException] Call to undefined function read()
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:12:55 Error: Fatal Error (1): Call to undefined function read() in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 17]
+2013-02-06 11:12:55 Error: [FatalErrorException] Call to undefined function read()
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:13:45 Error: Fatal Error (1): Call to undefined function read() in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 3]
+2013-02-06 11:13:45 Error: [FatalErrorException] Call to undefined function read()
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:15:15 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 3]
+2013-02-06 11:15:15 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$'
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:15:33 Error: Fatal Error (1): Call to a member function user() on a non-object in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 3]
+2013-02-06 11:15:33 Error: [FatalErrorException] Call to a member function user() on a non-object
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:16:55 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\View.php(815): HelperCollection->__isset('Auth')
+#2 C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp(3): View->__get('Auth')
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\View.php(923): include('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\View.php(886): View->_evaluate('C:\xampp\htdocs...', Array)
+#5 C:\xampp\htdocs\pharmaonline.com\lib\Cake\View\View.php(476): View->_render('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#8 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-06 11:17:12 Error: Fatal Error (1): Call to a member function user() on a non-object in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 3]
+2013-02-06 11:17:12 Error: [FatalErrorException] Call to a member function user() on a non-object
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:20:39 Error: [PDOException] SQLSTATE[HY000]: General error: 1467 Failed to read auto-increment value from storage engine
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ph...', Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ph...')
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Model.php(1735): DboSource->create(Object(Drug), Array, Array)
+#4 C:\xampp\htdocs\pharmaonline.com\app\Controller\DrugsController.php(136): Model->save(Array)
+#5 [internal function]: DrugsController->admin_add()
+#6 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(DrugsController), Array)
+#7 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-06 11:21:38 Error: [PDOException] SQLSTATE[HY000]: General error: 1467 Failed to read auto-increment value from storage engine
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ph...', Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ph...')
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Model.php(1735): DboSource->create(Object(Drug), Array, Array)
+#4 C:\xampp\htdocs\pharmaonline.com\app\Controller\DrugsController.php(136): Model->save(Array)
+#5 [internal function]: DrugsController->admin_add()
+#6 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(DrugsController), Array)
+#7 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-06 11:21:42 Error: [PDOException] SQLSTATE[HY000]: General error: 1467 Failed to read auto-increment value from storage engine
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ph...', Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ph...')
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Model.php(1735): DboSource->create(Object(Drug), Array, Array)
+#4 C:\xampp\htdocs\pharmaonline.com\app\Controller\DrugsController.php(136): Model->save(Array)
+#5 [internal function]: DrugsController->admin_add()
+#6 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(DrugsController), Array)
+#7 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-06 11:21:50 Error: [PDOException] SQLSTATE[HY000]: General error: 1467 Failed to read auto-increment value from storage engine
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ph...', Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ph...')
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Model.php(1735): DboSource->create(Object(Drug), Array, Array)
+#4 C:\xampp\htdocs\pharmaonline.com\app\Controller\DrugsController.php(136): Model->save(Array)
+#5 [internal function]: DrugsController->admin_add()
+#6 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(DrugsController), Array)
+#7 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-06 11:25:47 Error: [PDOException] SQLSTATE[HY000]: General error: 1467 Failed to read auto-increment value from storage engine
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ph...', Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ph...')
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Model.php(1735): DboSource->create(Object(Drug), Array, Array)
+#4 C:\xampp\htdocs\pharmaonline.com\app\Controller\DrugsController.php(136): Model->save(Array)
+#5 [internal function]: DrugsController->admin_add()
+#6 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(DrugsController), Array)
+#7 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-06 11:26:59 Error: Fatal Error (4): syntax error, unexpected T_ECHO, expecting ',' or ';' in [C:\xampp\htdocs\pharmaonline.com\app\View\Drugs\admin_add.ctp, line 12]
+2013-02-06 11:26:59 Error: [FatalErrorException] syntax error, unexpected T_ECHO, expecting ',' or ';'
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-06 11:27:22 Error: [PDOException] SQLSTATE[HY000]: General error: 1467 Failed to read auto-increment value from storage engine
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ph...', Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ph...')
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Model.php(1735): DboSource->create(Object(Drug), Array, Array)
+#4 C:\xampp\htdocs\pharmaonline.com\app\Controller\DrugsController.php(136): Model->save(Array)
+#5 [internal function]: DrugsController->admin_add()
+#6 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(DrugsController), Array)
+#7 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-06 11:29:01 Error: [PDOException] SQLSTATE[HY000]: General error: 1467 Failed to read auto-increment value from storage engine
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ph...', Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ph...')
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Model.php(1735): DboSource->create(Object(Drug), Array, Array)
+#4 C:\xampp\htdocs\pharmaonline.com\app\Controller\DrugsController.php(136): Model->save(Array)
+#5 [internal function]: DrugsController->admin_add()
+#6 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(DrugsController), Array)
+#7 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-06 11:30:17 Error: [PDOException] SQLSTATE[HY000]: General error: 1467 Failed to read auto-increment value from storage engine
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ph...', Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ph...')
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Model.php(1735): DboSource->create(Object(Drug), Array, Array)
+#4 C:\xampp\htdocs\pharmaonline.com\app\Controller\DrugsController.php(136): Model->save(Array)
+#5 [internal function]: DrugsController->admin_add()
+#6 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(DrugsController), Array)
+#7 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-06 11:30:22 Error: [PDOException] SQLSTATE[HY000]: General error: 1467 Failed to read auto-increment value from storage engine
+#0 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `ph...', Array)
+#2 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `ph...')
+#3 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Model\Model.php(1735): DboSource->create(Object(Drug), Array, Array)
+#4 C:\xampp\htdocs\pharmaonline.com\app\Controller\DrugsController.php(136): Model->save(Array)
+#5 [internal function]: DrugsController->admin_add()
+#6 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(DrugsController), Array)
+#7 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\pharmaonline.com\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DrugsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\pharmaonline.com\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
